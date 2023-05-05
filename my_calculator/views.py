@@ -8,9 +8,39 @@ def calculator(request):
     return render(request, "first.html")
 
 
-def add(request):
-    return HttpResponse("hello adds ")
+def add(request, value1, value2):
+    return render(
+         request,
+         'add.html',
+         context={
+             "value1": value1,
+             "value2": value2
+         })
 
-                   # return render(
-    #     request,
-    #     "add.html",
+def substract(request, value1, value2):
+    return render(
+         request,
+         'substract.html',
+         context={
+             "value1": value1,
+             "value2": value2
+         })
+
+def multiply(request, value1, value2):
+    return render(
+         request,
+         'multiply.html',
+         context={
+             "value1": value1,
+             "value2": value2
+         })
+
+def divide(request, value1, value2):
+    return render(
+         request,
+         'divide.html',
+         context={
+             "value1": value1,
+             "value2": value2
+         })
+
