@@ -5,7 +5,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def calculator(request):
-    return render(request, "first.html")
+    return HttpResponse(request, "Hello, try Calculator")
 
 
 def add(request, value1, value2):

@@ -17,12 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-import my_calculator
+from my_calculator import views
+from monday import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("calculator/", include('my_calculator.urls')),
-    # path("calculator/add/", views.add),
 
-    # path("add/", include('add.urls')),
+    path("calculator/", include('my_calculator.urls')),
+    path('isitmonday/', views.is_it_monday),
 ]
