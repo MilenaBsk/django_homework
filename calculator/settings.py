@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     # local apps
     'my_calculator.apps.MyCalculatorConfig',
     'monday.apps.MondayConfig',
-    # 'businesscard.apps.BussinescardC'
+    'businesscard.apps.BusinesscardConfig'
 
     # 'add.apps.AddConfig'
 ]

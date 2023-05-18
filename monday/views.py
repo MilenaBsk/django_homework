@@ -20,3 +20,4 @@ def is_it_monday(request):
     return render(
         request,
         'is_it_monday.html')
+

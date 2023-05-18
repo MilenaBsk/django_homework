@@ -18,11 +18,17 @@ from django.contrib import admin
 from django.urls import path, include
 
 from my_calculator import views
+
 from monday import views
+
+
+
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
 
     path("calculator/", include('my_calculator.urls')),
     path('isitmonday/', views.is_it_monday),
+    path('businesscard/', include('businesscard.urls'))
 ]
