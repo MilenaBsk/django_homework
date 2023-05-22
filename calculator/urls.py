@@ -30,5 +30,6 @@ urlpatterns = [
 
     path("calculator/", include('my_calculator.urls')),
     path('isitmonday/', views.is_it_monday),
-    path('businesscard/', include('businesscard.urls'))
+    path('businesscard/', include('businesscard.urls')),
+    path('draw/', include('draw.urls')),
 ]
